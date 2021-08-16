@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Accordions - AutoNOTE</title>
+  <link rel="stylesheet" href='../main.css'>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../assets/js/app.js"></script>
+  <!-- AnchorJS -->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<body>
+  <!-- Include site header for all pages -->
+  <div class="header-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="..">
+        Your Title Goes Here
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+            
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="../features/site_nav.html">Learn how to edit the menus</a>
+                </li>
+            
+        
+            
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More links
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    
+                        <li><a class="dropdown-item" href="../features/code.html">Code Highlighting</a></li>
+                    
+                    
+                        <li><a class="dropdown-item" href="../features/images.html">Images</a></li>
+                    
+                    
+                </ul>
+
+            </li>
+            
+        
+      </ul>
+
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="..">
+        <img src="../assets/imgs/uob-logo-white-transparent.svg" alt="" class="uob_logo"/>
+    </a>
+  </div>
+</nav>
+    
+<!-- <div class="navbar bg-white breadcrumb-bar"> -->
+<section class="breadcrumb-wrapper">
+    <div class="container bg-white">
+        <div class="row justify-content-around">
+            <div class="col-xl-3 col-lg-3 mb-4 mt-2 d-none d-lg-block">
+
+            </div>
+            <div class="col-md-9 col-lg-8">
+                
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    
+      
+        <li class="breadcrumb-item">
+        <a href="../features.html">
+          Features
+        </a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Accordions</li>
+      
+    
+  </ol>
+</nav>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- </div> -->
+
+  </div>
+
+  
+  <div class="container content-container">
+    <div class="row justify-content-around">
+      <div class="col-xl-3 col-lg-3 mb-4 mt-2 d-none d-lg-block">
+        <div class="sticky-top">
+          <div class="pt-lg-3"></div>
+          <ul class="nav nav-tabs flex-lg-column">
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-9 col-lg-8">
+        <h1 class="page-title" id="Accordions">Accordions</h1>
+
+<hr class="my-lg-4 my-3">
+<p>The accordion is a useful way to pack lots of optional or easily grouped information into manageable sections that may be hidden or shown as the user requires. This helps reduce the page length, giving the reader the ability to open and close different explanatory sections, while helping to keep text close to code snippets or images.</p>
+
+<h2 id="creating-an-accordion">Creating an accordion</h2>
+<p>To add an accordion to your page, you must simply use the following custom Liquid blocks in the page’s markdown file:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">accordion</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Title<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+First bellows content.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>A<span class="w"> </span>Second<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+# Second
+
+More bellows content
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Another<span class="w"> </span>One?<span class="w"> </span><span class="p">%}</span>
+Third bellows content.
+1. Which
+2. is
+3. markdown
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endaccordion</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>It’s worth noting that Liquid (and therefore Jekyll) doesn’t support indentation This will yield the following accordion block:</p>
+<div class="accordion" id="PHOEADPN">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="PHOEADPN-heading-1">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#PHOEADPN-collapse-1" aria-expanded="false" aria-controls="PHOEADPN-collapse-1">
+      Title of a Collapsible
+    </button>
+  </h2>
+  <div id="PHOEADPN-collapse-1" class="accordion-collapse collapse" aria-labelledby="PHOEADPN-heading-1" data-bs-parent="#PHOEADPN">
+    <div class="accordion-body">
+      
+<p>First bellows content.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="PHOEADPN-heading-2">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#PHOEADPN-collapse-2" aria-expanded="false" aria-controls="PHOEADPN-collapse-2">
+      A Second Collapsible
+    </button>
+  </h2>
+  <div id="PHOEADPN-collapse-2" class="accordion-collapse collapse" aria-labelledby="PHOEADPN-heading-2" data-bs-parent="#PHOEADPN">
+    <div class="accordion-body">
+      
+<h1 id="second">Second</h1>
+
+<p>More bellows content</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="PHOEADPN-heading-3">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#PHOEADPN-collapse-3" aria-expanded="false" aria-controls="PHOEADPN-collapse-3">
+      Another One?
+    </button>
+  </h2>
+  <div id="PHOEADPN-collapse-3" class="accordion-collapse collapse" aria-labelledby="PHOEADPN-heading-3" data-bs-parent="#PHOEADPN">
+    <div class="accordion-body">
+      
+<p>Third bellows content.</p>
+<ol>
+  <li>Which</li>
+  <li>is</li>
+  <li>markdown</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+<h2 id="options-and-extras">Options and extras</h2>
+<p>It is also possible to state which of the bellows collapsibles is open by default. To do this, simply pass the index of the bellows you wish to have open (starts at 1) as an argument. For example, if we wished for the second bellows to be open on page load, we could use the following:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">accordion</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>First<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be hidden by default on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Second<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be visible by deafult on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Third<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be hidden by default on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endaccordion</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>This code would yield the following result:</p>
+<div class="accordion" id="GHZRKBRE">
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="GHZRKBRE-heading-1">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#GHZRKBRE-collapse-1" aria-expanded="false" aria-controls="GHZRKBRE-collapse-1">
+      First Collapsible
+    </button>
+  </h2>
+  <div id="GHZRKBRE-collapse-1" class="accordion-collapse collapse" aria-labelledby="GHZRKBRE-heading-1" data-bs-parent="#GHZRKBRE">
+    <div class="accordion-body">
+      
+<p>This collapsible should be hidden by default on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="GHZRKBRE-heading-2">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#GHZRKBRE-collapse-2" aria-expanded="true" aria-controls="GHZRKBRE-collapse-2">
+      Second Collapsible
+    </button>
+  </h2>
+  <div id="GHZRKBRE-collapse-2" class="accordion-collapse collapse show" aria-labelledby="GHZRKBRE-heading-2" data-bs-parent="#GHZRKBRE">
+    <div class="accordion-body">
+      
+<p>This collapsible should be visible by deafult on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="GHZRKBRE-heading-3">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#GHZRKBRE-collapse-3" aria-expanded="false" aria-controls="GHZRKBRE-collapse-3">
+      Third Collapsible
+    </button>
+  </h2>
+  <div id="GHZRKBRE-collapse-3" class="accordion-collapse collapse" aria-labelledby="GHZRKBRE-heading-3" data-bs-parent="#GHZRKBRE">
+    <div class="accordion-body">
+      
+<p>This collapsible should be hidden by default on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+        <div class="citation_footer_wrapper">
+    <h3>Citations</h3>
+    <ol class="citation_footer">
+
+    </ol>
+</div>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- Include site footer for all pages -->
+  <footer class="footer mt-auto text-muted">
+  <hr />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p class="footer-copyright">Made possible by AutoNOTE</p>
+      </div>
+
+      <div class="col-sm text-sm-end">
+        <p class="footer-copyright ml-auto">University of Bath</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- AnchorJS -->
+  <script>
+    anchors.options.placement = 'left';
+    anchors.add('h1');
+    anchors.add();
+  </script>
+</body>
+
+</html>
