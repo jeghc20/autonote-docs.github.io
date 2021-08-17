@@ -5,7 +5,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Features - AutoNOTE</title>
+  <title>Getting Started - AutoNOTE</title>
   <link rel="stylesheet" href='./main.css'>
 
   <!-- Bootstrap CSS -->
@@ -80,7 +80,7 @@
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     
       
-        <li class="breadcrumb-item active" aria-current="page">Features</li>
+        <li class="breadcrumb-item active" aria-current="page">Getting Started</li>
       
     
   </ol>
@@ -109,113 +109,70 @@
 
       </div>
       <div class="col-md-9 col-lg-8">
-        <h1 class="page-title" id="Features">Features</h1>
+        <h1 class="page-title" id="Getting Started">Getting Started</h1>
 
-<p>Documentation and examples of all AutoNOTE features.</p>
+<p>How to get up and running on your local machine.</p>
 
 <hr class="my-lg-4 my-3">
-<p>Just a test for breadcrumb navigation. At some point soon this page should contain navigation to all feature pages… hopefully.</p>
+<h2 id="editor">Editor</h2>
 
-<ul>
+<p>This project has been designed to work in VSCode. While you can use any editor that you desire, using VSCode will allow you to utilise the automatic project setup tools that I have put in place for the workspace.</p>
 
-  <li>
-    <a href="./features/accordion.html">Accordions</a>
-    <!-- <p><p>The accordion is a useful way to pack lots of optional or easily grouped information into manageable sections that may be hidden or shown as the user requires. This helps reduce the page length, giving the reader the ability to open and close different explanatory sections, while helping to keep text close to code snippets or images.</p>
-</p> -->
-  </li>
+<h2 id="install-ruby-and-bundler">Install Ruby and Bundler</h2>
 
-  <li>
-    <a href="./features/breadcrumbs.html">Breadcrumbs</a>
-    <!-- <p>
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    
-    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-    
-      
-        <li class="breadcrumb-item">
-        <a href="../features.html">
-          Features
-        </a></li>
-      
-    
-      
-        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
-      
-    
-  </ol>
-</nav>
+<p>This project requires ruby and bundler. As such, you will need a working installation of these. You can check this using <code class="language-plaintext highlighter-rouge">ruby -v</code> and <code class="language-plaintext highlighter-rouge">bundle -v</code>.</p>
 
-<p>They can go anywhere in the page. Suitable for use in both page templates and specific page documents.</p>
-</p> -->
-  </li>
-
-  <li>
-    <a href="./features/cards.html">Cards</a>
-    <!-- <p><p>You can add cards to highlight sections of text and make pages more interactive. Buttons with collapsible sections can be embedded within cards - these are good for question hints or answers! An example of this can be seen below:</p>
-</p> -->
-  </li>
-
-  <li>
-    <a href="./features/citations.html">Citations</a>
-    <!-- <p><p>To include a citation in your page you can use the command below:</p>
-</p> -->
-  </li>
-
-  <li>
-    <a href="./features/code.html">Code Highlighting</a>
-    <!-- <p><p>AutoNOTE 2 uses a Rouge highlighter to provide effective code formatting. There are two distinct versions of code highlighting:</p>
 <ol>
-  <li>Inline code or keywords.</li>
-  <li>Code snippets.</li>
+  <li>You can get ruby here: https://www.ruby-lang.org/en/downloads/</li>
+  <li>When finished with this you will need to restart VSCode.</li>
+  <li>You can then install bundler using <code class="language-plaintext highlighter-rouge">gem install bundler</code></li>
 </ol>
-</p> -->
-  </li>
 
-  <li>
-    <a href="./features/desmos.html">Desmos Embed</a>
-    <!-- <p><p>Sometimes, you may wish to embed desmos in your page. With AutoNOTE 2 this is achieved through a single command:</p>
-</p> -->
-  </li>
+<h2 id="install-vscode-extensions">Install VSCode extensions</h2>
 
-  <li>
-    <a href="./features/equations.html">Equations</a>
-    <!-- <p><p>To enable equations for a given page, you must set <code class="language-plaintext highlighter-rouge">use_math</code> to <code class="language-plaintext highlighter-rouge">true</code> in the page’s front matter. For example, this page’s front matter appears as follows:</p>
-</p> -->
-  </li>
+<p>This project has a set of recommended extensions for VSCode. As such, a prompt will appear when you first open the project in VSCode. Simply select install all.</p>
 
-  <li>
-    <a href="./features/images.html">Images</a>
-    <!-- <p><p>To include images in your pages, first you must add them to the images folder.</p>
-</p> -->
-  </li>
+<h2 id="run-bundler">Run Bundler</h2>
 
-  <li>
-    <a href="./features/landing_page.html">Landing Page</a>
-    <!-- <p><p>The front page is customisable by changing the front-matter variables.</p>
-</p> -->
-  </li>
+<p>Once you have pulled the project from the repo run <code class="language-plaintext highlighter-rouge">bundle install</code>. NOTE: It is critical that the path for this project has no space characters or this operation will fail!</p>
 
-  <li>
-    <a href="./features/panopto.html">Panopto Embed</a>
-    <!-- <p><p>Sometimes, you may wish to include a Panopto video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
-</p> -->
-  </li>
+<h2 id="install-bootstrap-and-other-npm-dependencies">Install Bootstrap and other NPM dependencies</h2>
 
-  <li>
-    <a href="./features/site_nav.html">Site Navigation</a>
-    <!-- <p><h2 id="top-bar-navigation-menu">Top bar navigation menu</h2>
-<p>To customise the navigation menu, you have to edit this file:</p>
-</p> -->
-  </li>
+<p>This project currently uses Bootstrap 5.0 Beta 1 and Bootstraps Icons. The install process for these systems is best achieved through npm:</p>
 
-  <li>
-    <a href="./features/youtube.html">YouTube Embed</a>
-    <!-- <p><p>Sometimes, you may wish to include a YouTube video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
-</p> -->
-  </li>
+<p>Run <code class="language-plaintext highlighter-rouge">npm install</code> in the workspace terminal (<kbd>ctrl</kbd> + <kbd>'</kbd>).</p>
 
-</ul>
+<p>It should be noted that Bootstrap 5.0 is still an early alpha. So things will change!</p>
+
+<h2 id="settings">Settings</h2>
+
+<p>The extension settings should be included within the workspaces “settings.json” file. User specific settings may then be used if further changes are desired.</p>
+
+<h1 id="editing">Editing</h1>
+
+<p>There is a process that must be followed when editing this project.</p>
+
+<h2 id="1-start-scss-watcher">1) Start SCSS watcher</h2>
+
+<p>Before making changes to the look of the site, it is important to ensure that all SCSS changes are compiled on save. This is best achieved by starting the live SCSS watcher found at the bottom of VSCode (1). This should then display an output that confirms watching is active (2).</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+
+<figure class="figure">
+    <img src="/images/watchSCSS.png" class="figure-img img-fluid rounded" alt="Watch SCSS button is found along the bottom bar of VSCode" />
+    <figcaption class="figure-caption">Watch SCSS button is found along the bottom bar of VSCode</figcaption>
+</figure>
+    </div>
+</div>
+
+<h2 id="2-start-the-jekyll-server">2) Start the jekyll server</h2>
+
+<p>Run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> in the workspace terminal (<kbd>ctrl</kbd> + <kbd>'</kbd>).</p>
+
+<h2 id="3-make-your-edits">3) Make your edits</h2>
+
+<p>You are now good to edit the project. Later on, we will go into more detail on how best to produce new style files or add new pages of different types. For now it is early days.</p>
 
 
         <div class="citation_footer_wrapper">

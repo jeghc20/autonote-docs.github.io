@@ -5,8 +5,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>YouTube Embed - AutoNOTE</title>
-  <link rel="stylesheet" href='../main.css'>
+  <title>Deploy to Moodle - AutoNOTE</title>
+  <link rel="stylesheet" href='./main.css'>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,7 +19,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script>
   <!-- AnchorJS -->
   <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
 </head>
@@ -29,7 +29,7 @@
   <div class="header-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="..">
+    <a class="navbar-brand" href=".">
         AutoNOTE Docs
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,27 +40,27 @@
         
             
                 <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="../getting_started.html">Getting Started</a>
+                    <a class="nav-link active" aria-current="page" href="./getting_started.html">Getting Started</a>
                 </li>
             
         
             
                 <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="../deploy.html">Deploy to Moodle</a>
+                    <a class="nav-link active" aria-current="page" href="./deploy.html">Deploy to Moodle</a>
                 </li>
             
         
             
                 <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="../features.html">All Features</a>
+                    <a class="nav-link active" aria-current="page" href="./features.html">All Features</a>
                 </li>
             
         
       </ul>
 
     </div>
-    <a class="navbar-brand d-none d-lg-block" href="..">
-        <img src="../assets/imgs/uob-logo-white-transparent.svg" alt="" class="uob_logo"/>
+    <a class="navbar-brand d-none d-lg-block" href=".">
+        <img src="./assets/imgs/uob-logo-white-transparent.svg" alt="" class="uob_logo"/>
     </a>
   </div>
 </nav>
@@ -77,17 +77,10 @@
 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
   <ol class="breadcrumb">
     
-    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     
       
-        <li class="breadcrumb-item">
-        <a href="../features.html">
-          Features
-        </a></li>
-      
-    
-      
-        <li class="breadcrumb-item active" aria-current="page">YouTube Embed</li>
+        <li class="breadcrumb-item active" aria-current="page">Deploy to Moodle</li>
       
     
   </ol>
@@ -116,19 +109,64 @@
 
       </div>
       <div class="col-md-9 col-lg-8">
-        <h1 class="page-title" id="YouTube Embed">YouTube Embed</h1>
+        <h1 class="page-title" id="Deploy to Moodle">Deploy to Moodle</h1>
+
+<p>Instructions on how to deploy your website to moodle.</p>
 
 <hr class="my-lg-4 my-3">
-<p>Sometimes, you may wish to include a YouTube video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+<h3 id="step-1">Step 1</h3>
 
-<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">youtube</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s1">'wshaL7DdiL4'</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+<p>Compress your <code class="language-plaintext highlighter-rouge">_site</code> file into a zip file.</p>
 
-<p>Simply replace the <code class="language-plaintext highlighter-rouge">id</code> parameter with the ID of your desired YouTube video and it will appear as follows:</p>
-<div class="video-wrapper">
-  <iframe src="https://www.youtube.com/embed/wshaL7DdiL4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<h3 id="step-2">Step 2</h3>
+
+<p>Inside a moodle topic, <code class="language-plaintext highlighter-rouge">add an activity or resource</code>, then select file.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+<figure class="figure">
+    <img src="/images/selectFile.png" class="figure-img img-fluid rounded" alt="Select file in 'Add an activity or resource'" />
+    <figcaption class="figure-caption">Select file in 'Add an activity or resource'</figcaption>
+</figure>
+    </div>
 </div>
 
-<p>When using this command, the video is a full width responsive embedded iframe as per the YouTube embed guidance.</p>
+<h3 id="step-3">Step 3</h3>
+
+<p>Upload your <code class="language-plaintext highlighter-rouge">_site.zip</code> file.</p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Right click on the <code class="language-plaintext highlighter-rouge">_site.zip</code> file and select <code class="language-plaintext highlighter-rouge">unzip</code>.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+
+<figure class="figure">
+    <img src="/images/bothFile.png" class="figure-img img-fluid rounded" alt="It should look like this after unzipping" />
+    <figcaption class="figure-caption">It should look like this after unzipping</figcaption>
+</figure>
+    </div>
+</div>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Click into the _site file and right click on <code class="language-plaintext highlighter-rouge">index.html</code>. Then select <code class="language-plaintext highlighter-rouge">Set main file</code>.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+<figure class="figure">
+    <img src="/images/setMainFile.png" class="figure-img img-fluid rounded" alt="Set index.html as the main file" />
+    <figcaption class="figure-caption">Set index.html as the main file</figcaption>
+</figure>
+    </div>
+</div>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Name the file, click save and return to course, and you’re done!</p>
 
 
         <div class="citation_footer_wrapper">
