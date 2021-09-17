@@ -1,0 +1,3 @@
+<div class="desmos-wrapper">
+<iframe src="https://www.desmos.com/calculator/{{ include.id }}{% if include.static == 'true'%}?embed{% endif %}" ></iframe>
+</div>

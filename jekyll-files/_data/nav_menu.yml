@@ -1,0 +1,21 @@
+# --------------------------
+# ---- Example Menu ------
+# menu_title: Structured Programming - XX20001
+# menu_links:
+# - title: Course Intro
+#   markdown-file: Introduction.md
+# - title: Labs
+#   dropdown:
+#     - title: Lab 1
+#       markdown-file: _labs/lab1.md
+#     - title: Lab 2
+#       markdown-file: _labs/lab2.md
+
+menu_title: AutoNOTE Docs
+menu_links:
+  - title: Getting Started
+    markdown-file: getting_started.md
+  - title: Deploy to Moodle
+    markdown-file: deploy.md
+  - title: All Features
+    markdown-file: features.md

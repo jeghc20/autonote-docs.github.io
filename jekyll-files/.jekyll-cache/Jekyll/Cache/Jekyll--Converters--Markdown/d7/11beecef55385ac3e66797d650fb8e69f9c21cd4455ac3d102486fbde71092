@@ -1,0 +1,45 @@
+I"�<h2 id="top-bar-navigation-menu">Top bar navigation menu</h2>
+<p>To customise the navigation menu, you have to edit this file:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-plain" data-lang="plain">AutoNOTE/
+├─ _data/
+   ├─ nav_menu.yml</code></pre></figure>
+
+<p>The default file should look something like this:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-yaml" data-lang="yaml"><span class="na">menu_title</span><span class="pi">:</span> <span class="s">Your Title Goes Here</span>
+<span class="na">menu_links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Learn how to edit the menu</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">features/nav_menu.html</span>
+
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Link </span><span class="m">1</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="c1">#</span>
+
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Link </span><span class="m">2</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="c1">#</span></code></pre></figure>
+
+<p>Simply edit the <code class="language-plaintext highlighter-rouge">menu_title</code> and <code class="language-plaintext highlighter-rouge">menu_links</code> in the same fashion to custom the navigation menu for yourself. You can have as many or as few links as you’d like.</p>
+
+<h2 id="front-page-navigation-menu">Front page navigation menu</h2>
+
+<p>By default, the front page navigation is the same as the top bar navigation. However this can be customised in a number of ways.</p>
+
+<p>Firstly, if you input any collections into the <code class="language-plaintext highlighter-rouge">navigation</code> front matter, a list will replace the default layout. Below shows an example of how to add a list of all the pages in the ‘features’ collection.</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">---
+navigation:
+  - features
+---</code></pre></figure>
+
+<p>Alternatively, you can fully customise the front page navigation by setting <code class="language-plaintext highlighter-rouge">use_custom_menu</code> to <code class="language-plaintext highlighter-rouge">true</code> as bellow</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">---
+use_custom_menu: true
+---</code></pre></figure>
+
+<p>and editing the front-page-nav.yml file, found here:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-plain" data-lang="plain">AutoNOTE/
+├─ _data/
+   ├─ front-page-nav.yml</code></pre></figure>
+:ET

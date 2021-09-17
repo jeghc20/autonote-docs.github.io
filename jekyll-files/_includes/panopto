@@ -1,0 +1,5 @@
+<div class="video-wrapper">
+  <iframe
+    src="https://uniofbath.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id={{ include.id }}&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all"
+    allowfullscreen allow="autoplay"></iframe>
+</div>

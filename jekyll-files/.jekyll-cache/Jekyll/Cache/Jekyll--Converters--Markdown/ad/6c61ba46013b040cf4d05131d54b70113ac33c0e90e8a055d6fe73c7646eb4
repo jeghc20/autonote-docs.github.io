@@ -1,0 +1,19 @@
+I"ë<p>The front page is customisable by changing the front-matter variables.</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">---
+unit-code: 
+unit-name:
+unit-description:
+
+primary-button:
+  title: 
+  markdown-file: 
+  custom-url:
+secondary-button:
+  title: 
+  markdown-file:
+  custom-url: 
+---</code></pre></figure>
+
+<p>Set all variables as appropriate. If you leave them empty then nothing will appear.</p>
+:ET

@@ -1,0 +1,36 @@
+I"�
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    
+      
+        <li class="breadcrumb-item">
+        <a href="../features.html">
+          Features
+        </a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
+      
+    
+  </ol>
+</nav>
+
+<p>They can go anywhere in the page. Suitable for use in both page templates and specific page documents.
+<!--more--></p>
+<h2 id="theyre-automatic">They’re automatic…</h2>
+
+<p>…but there are some rules. Any folders must have a page of the same name in the parent directory, this page will be where the 
+breadcrumb trail navigates to. 
+<!--more--></p>
+
+<p>So, for example, this page is inside the ‘features’ folder. There should therefore be a ‘features.html’ page in the root directory. 
+This top-level page should provide navigation to this page and other features.</p>
+
+<p>Maybe I will make a navigation template (instead of default) that takes a nav data set as an argument and generates a basic nav 
+page - that way I can be lazy when I want to.</p>
+
+<p>Now to just work out how navigation is going to work.</p>
+:ET

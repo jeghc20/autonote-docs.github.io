@@ -1,0 +1,103 @@
+I"�<p>Just a test for breadcrumb navigation. At some point soon this page should contain navigation to all feature pages… hopefully.</p>
+
+<ul>
+
+  <li>
+    <a href="./features/accordion.html">Accordions</a>
+    <!-- <p><p>The accordion is a useful way to pack lots of optional or easily grouped information into manageable sections that may be hidden or shown as the user requires. This helps reduce the page length, giving the reader the ability to open and close different explanatory sections, while helping to keep text close to code snippets or images.</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/breadcrumbs.html">Breadcrumbs</a>
+    <!-- <p>
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    
+      
+        <li class="breadcrumb-item">
+        <a href="../features.html">
+          Features
+        </a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Breadcrumbs</li>
+      
+    
+  </ol>
+</nav>
+
+<p>They can go anywhere in the page. Suitable for use in both page templates and specific page documents.</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/cards.html">Cards</a>
+    <!-- <p><p>You can add cards to highlight sections of text and make pages more interactive. Buttons with collapsible sections can be embedded within cards - these are good for question hints or answers! An example of this can be seen below:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/citations.html">Citations</a>
+    <!-- <p><p>To include a citation in your page you can use the command below:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/code.html">Code Highlighting</a>
+    <!-- <p><p>AutoNOTE 2 uses a Rouge highlighter to provide effective code formatting. There are two distinct versions of code highlighting:</p>
+<ol>
+  <li>Inline code or keywords.</li>
+  <li>Code snippets.</li>
+</ol>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/desmos.html">Desmos Embed</a>
+    <!-- <p><p>Sometimes, you may wish to embed desmos in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/equations.html">Equations</a>
+    <!-- <p><p>To enable equations for a given page, you must set <code class="language-plaintext highlighter-rouge">use_math</code> to <code class="language-plaintext highlighter-rouge">true</code> in the page’s front matter. For example, this page’s front matter appears as follows:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/images.html">Images</a>
+    <!-- <p><p>To include images in your pages, first you must add them to the images folder.</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/landing_page.html">Landing Page</a>
+    <!-- <p><p>The front page is customisable by changing the front-matter variables.</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/panopto.html">Panopto Embed</a>
+    <!-- <p><p>Sometimes, you may wish to include a Panopto video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/site_nav.html">Site Navigation</a>
+    <!-- <p><h2 id="top-bar-navigation-menu">Top bar navigation menu</h2>
+<p>To customise the navigation menu, you have to edit this file:</p>
+</p> -->
+  </li>
+
+  <li>
+    <a href="./features/youtube.html">YouTube Embed</a>
+    <!-- <p><p>Sometimes, you may wish to include a YouTube video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+</p> -->
+  </li>
+
+</ul>
+:ET

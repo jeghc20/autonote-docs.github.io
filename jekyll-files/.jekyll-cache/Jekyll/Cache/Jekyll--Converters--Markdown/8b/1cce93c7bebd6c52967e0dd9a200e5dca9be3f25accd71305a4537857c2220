@@ -1,0 +1,11 @@
+I"Ò<p>Sometimes, you may wish to include a Panopto video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">panopto</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s1">'1064c46d-83e2-4b78-939b-ac47011ede1e'</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>Simply replace the <code class="language-plaintext highlighter-rouge">id</code> parameter with the ID of your desired Panopto video (you can get this from the address of the video in question) and it will appear as follows:</p>
+<div class="video-wrapper">
+  <iframe src="https://uniofbath.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1064c46d-83e2-4b78-939b-ac47011ede1e&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" allowfullscreen="" allow="autoplay"></iframe>
+</div>
+
+<p>When using this command, the video is a full width responsive embedded iframe.</p>
+:ET

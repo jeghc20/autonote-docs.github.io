@@ -1,0 +1,20 @@
+<section class="text-center container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <p class="lead text-muted"> {{page.unit-code}}</p>
+        <h1 class="">{{ page.unit-name }}</h1>
+        <p class="lead text-muted">{{ page.unit-description}}</p>
+        <p>
+          {% if page.primary-button.title %}
+
+          <a href="{% if page.primary-button.custom-url %} {{page.primary-button.custom-url}} {% else %}{{ relative_url_base }}{% link {{page.primary-button.markdown-file}} %} {% endif%}" class="btn btn-primary my-2">{{page.primary-button.title}}</a>
+          {% endif %}
+
+          {% if page.secondary-button.title%}
+            <a href="{% if page.secondary-button.custom-url %} {{page.secondary-button.custom-url}} {% else %}{{ relative_url_base }}{% link {{page.secondary-button.markdown-file}} %} {% endif%}" class="btn btn-secondary my-2">{{page.secondary-button.title}}</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </section>
+<hr class="mb-5">

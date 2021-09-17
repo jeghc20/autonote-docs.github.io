@@ -1,0 +1,8 @@
+Check that collapsible and accordion HTML meet the accessibility and Bootstrap 5 requirements.
+Include and use Bootstrap 5 in this project using NPM (check that it appears in package.json)
+Identify the Bootstrap constructs that we intend to support - cross-modularize where possible.
+Add instruction into readme to tell user to disable the features collection in _config.yml for their own project.
+Add collection for users to add their own pages.
+Accordions currently show anchors... need to find a way to stop this.
+
+Code blocks need alt text... (check what the VHDL site does...)

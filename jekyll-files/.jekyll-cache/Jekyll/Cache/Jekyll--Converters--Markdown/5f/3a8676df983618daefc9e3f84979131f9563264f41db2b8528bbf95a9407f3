@@ -1,0 +1,16 @@
+I"¦
+<h3 id="this-is-a-card">This is a card</h3>
+
+<p>What can I do with it?</p>
+
+<p><a class="btn btn-primary" data-bs-toggle="collapse" href="#ETLUVHFN-collapse-1" role="button" aria-expanded="false" aria-controls="ETLUVHFN-collapse-1">
+        Answer </a></p>
+<div class="collapse" id="ETLUVHFN-collapse-1">
+    <div class="card card-body">
+        
+<p>Embed any markdown or code snippets like usual</p>
+
+
+    </div></div>
+
+:ET

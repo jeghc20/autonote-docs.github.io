@@ -1,0 +1,152 @@
+I"�<p>The accordion is a useful way to pack lots of optional or easily grouped information into manageable sections that may be hidden or shown as the user requires. This helps reduce the page length, giving the reader the ability to open and close different explanatory sections, while helping to keep text close to code snippets or images.</p>
+
+<h2 id="creating-an-accordion">Creating an accordion</h2>
+<p>To add an accordion to your page, you must simply use the following custom Liquid blocks in the page’s markdown file:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">accordion</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Title<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+First bellows content.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>A<span class="w"> </span>Second<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+# Second
+
+More bellows content
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Another<span class="w"> </span>One?<span class="w"> </span><span class="p">%}</span>
+Third bellows content.
+1. Which
+2. is
+3. markdown
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endaccordion</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>It’s worth noting that Liquid (and therefore Jekyll) doesn’t support indentation This will yield the following accordion block:</p>
+<div class="accordion" id="RSZKVMAR">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="RSZKVMAR-heading-1">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#RSZKVMAR-collapse-1" aria-expanded="false" aria-controls="RSZKVMAR-collapse-1">
+      Title of a Collapsible
+    </button>
+  </h2>
+  <div id="RSZKVMAR-collapse-1" class="accordion-collapse collapse" aria-labelledby="RSZKVMAR-heading-1" data-bs-parent="#RSZKVMAR">
+    <div class="accordion-body">
+      
+<p>First bellows content.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="RSZKVMAR-heading-2">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#RSZKVMAR-collapse-2" aria-expanded="false" aria-controls="RSZKVMAR-collapse-2">
+      A Second Collapsible
+    </button>
+  </h2>
+  <div id="RSZKVMAR-collapse-2" class="accordion-collapse collapse" aria-labelledby="RSZKVMAR-heading-2" data-bs-parent="#RSZKVMAR">
+    <div class="accordion-body">
+      
+<h1 id="second">Second</h1>
+
+<p>More bellows content</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="RSZKVMAR-heading-3">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#RSZKVMAR-collapse-3" aria-expanded="false" aria-controls="RSZKVMAR-collapse-3">
+      Another One?
+    </button>
+  </h2>
+  <div id="RSZKVMAR-collapse-3" class="accordion-collapse collapse" aria-labelledby="RSZKVMAR-heading-3" data-bs-parent="#RSZKVMAR">
+    <div class="accordion-body">
+      
+<p>Third bellows content.</p>
+<ol>
+  <li>Which</li>
+  <li>is</li>
+  <li>markdown</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+<h2 id="options-and-extras">Options and extras</h2>
+<p>It is also possible to state which of the bellows collapsibles is open by default. To do this, simply pass the index of the bellows you wish to have open (starts at 1) as an argument. For example, if we wished for the second bellows to be open on page load, we could use the following:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">accordion</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>First<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be hidden by default on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Second<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be visible by deafult on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">bellows</span><span class="w"> </span>Third<span class="w"> </span>Collapsible<span class="w"> </span><span class="p">%}</span>
+This collapsible should be hidden by default on loading the page.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbellows</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endaccordion</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>This code would yield the following result:</p>
+<div class="accordion" id="LVUGHWRS">
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="LVUGHWRS-heading-1">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LVUGHWRS-collapse-1" aria-expanded="false" aria-controls="LVUGHWRS-collapse-1">
+      First Collapsible
+    </button>
+  </h2>
+  <div id="LVUGHWRS-collapse-1" class="accordion-collapse collapse" aria-labelledby="LVUGHWRS-heading-1" data-bs-parent="#LVUGHWRS">
+    <div class="accordion-body">
+      
+<p>This collapsible should be hidden by default on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="LVUGHWRS-heading-2">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#LVUGHWRS-collapse-2" aria-expanded="true" aria-controls="LVUGHWRS-collapse-2">
+      Second Collapsible
+    </button>
+  </h2>
+  <div id="LVUGHWRS-collapse-2" class="accordion-collapse collapse show" aria-labelledby="LVUGHWRS-heading-2" data-bs-parent="#LVUGHWRS">
+    <div class="accordion-body">
+      
+<p>This collapsible should be visible by deafult on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="LVUGHWRS-heading-3">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#LVUGHWRS-collapse-3" aria-expanded="false" aria-controls="LVUGHWRS-collapse-3">
+      Third Collapsible
+    </button>
+  </h2>
+  <div id="LVUGHWRS-collapse-3" class="accordion-collapse collapse" aria-labelledby="LVUGHWRS-heading-3" data-bs-parent="#LVUGHWRS">
+    <div class="accordion-body">
+      
+<p>This collapsible should be hidden by default on loading the page.</p>
+
+    </div>
+  </div>
+</div>
+
+</div>
+:ET

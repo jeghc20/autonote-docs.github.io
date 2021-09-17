@@ -1,0 +1,23 @@
+<div
+    class="row justify-content-{% if include.position == 'left' %}left{% elsif include.position == 'right' %}end{% else %}center{% endif %}">
+    <div 
+
+    {% case include.size %}
+        {% when 'sm' %}
+            {% assign size=site.data.sizes.sm %}
+        {% when 'md' %}
+            {% assign size=site.data.sizes.md %}
+        {% when 'lg' %}
+            {% assign size=site.data.sizes.lg %}
+        {%else%} 
+            {% assign size=site.data.sizes.md %} 
+    {%endcase%}
+
+    {% if include.size-custom %}
+        {% if include.size-custom > 12 %}
+            {% assign size=12%}
+        {% else %}
+            {% assign size=include.size-custom%}
+        {% endif%}
+    {% endif %}
+    class="col-{{site.data.sizes.image-breakpoint}}-{{ size }}">

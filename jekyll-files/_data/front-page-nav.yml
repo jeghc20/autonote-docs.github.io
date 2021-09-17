@@ -1,0 +1,40 @@
+# Change 'use-custom-menu' to 'true' to apply the menu to the front page
+custom-menu:
+  - title: Pages and Navigation
+    markdown-file:
+    pages:
+      - title: Landing Page
+        markdown-file: _features/landing_page.md
+      - title: Site Navigation
+        markdown-file: _features/site_nav.md
+
+  - title: Page Features
+    markdown-file:
+    pages:
+      - title: Accordions
+        markdown-file: _features/accordion.md
+      - title: Cards
+        markdown-file: _features/cards.md
+      - title: Code
+        markdown-file: _features/code.md
+      - title: Equations
+        markdown-file: _features/equations.md
+      - title: Images
+        markdown-file: _features/images.md
+      - title: Citations
+        markdown-file: _features/citations.md
+
+  - title: Embeddings
+    markdown-file:
+    pages:
+      - title: Desmos
+        markdown-file: _features/desmos.md
+      - title: Youtube
+        markdown-file: _features/youtube.md
+      - title: Panopto
+        markdown-file: _features/panopto.md
+
+  - title: Misc
+    pages:
+      - title: Breadcrumbs
+        markdown-file: _features/breadcrumbs.md

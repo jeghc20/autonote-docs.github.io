@@ -1,0 +1,54 @@
+I"¼<h3 id="step-1">Step 1</h3>
+
+<p>Compress your <code class="language-plaintext highlighter-rouge">_site</code> file into a zip file.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Inside a moodle topic, <code class="language-plaintext highlighter-rouge">add an activity or resource</code>, then select file.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+<figure class="figure">
+    <img src="/images/selectFile.png" class="figure-img img-fluid rounded" alt="Select file in 'Add an activity or resource'" />
+    <figcaption class="figure-caption">Select file in 'Add an activity or resource'</figcaption>
+</figure>
+    </div>
+</div>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Upload your <code class="language-plaintext highlighter-rouge">_site.zip</code> file.</p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Right click on the <code class="language-plaintext highlighter-rouge">_site.zip</code> file and select <code class="language-plaintext highlighter-rouge">unzip</code>.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+
+<figure class="figure">
+    <img src="/images/bothFile.png" class="figure-img img-fluid rounded" alt="It should look like this after unzipping" />
+    <figcaption class="figure-caption">It should look like this after unzipping</figcaption>
+</figure>
+    </div>
+</div>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Click into the _site file and right click on <code class="language-plaintext highlighter-rouge">index.html</code>. Then select <code class="language-plaintext highlighter-rouge">Set main file</code>.</p>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+<figure class="figure">
+    <img src="/images/setMainFile.png" class="figure-img img-fluid rounded" alt="Set index.html as the main file" />
+    <figcaption class="figure-caption">Set index.html as the main file</figcaption>
+</figure>
+    </div>
+</div>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Name the file, click save and return to course, and youâ€™re done!</p>
+:ET

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ relative_url_base }}">
+        {{ site.data.nav_menu.menu_title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {% for item in site.data.nav_menu.menu_links %}
+            {% if item.dropdown %}
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{item.title}}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    {% for dropdown_item in item.dropdown %}
+                        <li><a class="dropdown-item" href="{{ relative_url_base }}{% link {{dropdown_item.markdown-file}} %}">{{dropdown_item.title}}</a></li>
+                    
+                    {% endfor %}
+                </ul>
+
+            </li>
+            {%else%}
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{{ relative_url_base }}{% link {{item.markdown-file}} %}">{{ item.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="{{ relative_url_base }}">
+        <img src="{{relative_url_base}}/assets/imgs/uob-logo-white-transparent.svg" alt="" class="uob_logo"/>
+    </a>
+  </div>
+</nav>

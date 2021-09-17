@@ -1,0 +1,12 @@
+{% include row-start size=include.size position=include.position size-custom=include.size-custom%}
+{% if include.src %}
+{% assign src=include.src %}
+{% else %}
+{% assign src= relative_url_base %}
+{% endif%}
+<figure class="figure">
+    <img src="{% if include.src %}{{ include.src }}{%else%}{{relative_url_base}}/images/{{include.file}}{% endif %}" class="figure-img img-fluid rounded"
+        alt="{% if include.alt %}{{include.alt}}{% elsif include.caption %}{{include.caption}}{% else %}Figure{% endif %}">
+    <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+</figure>
+{% include row-end %}

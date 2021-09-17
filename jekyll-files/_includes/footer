@@ -1,0 +1,14 @@
+<footer class="footer mt-auto text-muted">
+  <hr />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p class="footer-copyright">AutoNote is funded by the University of Bath <br> AutoNote was developed by Jonathan Cater and Fraser March</p>
+      </div>
+
+      <div class="col-sm text-sm-end">
+        <p class="footer-copyright ml-auto">{{site.hostinfo}}</p>
+      </div>
+    </div>
+  </div>
+</footer>

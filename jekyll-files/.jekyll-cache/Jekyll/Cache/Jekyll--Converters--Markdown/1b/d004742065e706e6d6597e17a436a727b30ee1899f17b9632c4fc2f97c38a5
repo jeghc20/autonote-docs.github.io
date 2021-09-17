@@ -1,0 +1,11 @@
+I"I<p>Sometimes, you may wish to include a YouTube video in your page. With AutoNOTE 2 this is achieved through a single command:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">youtube</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s1">'wshaL7DdiL4'</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>Simply replace the <code class="language-plaintext highlighter-rouge">id</code> parameter with the ID of your desired YouTube video and it will appear as follows:</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/wshaL7DdiL4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>When using this command, the video is a full width responsive embedded iframe as per the YouTube embed guidance.</p>
+:ET

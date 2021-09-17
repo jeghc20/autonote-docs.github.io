@@ -1,0 +1,53 @@
+I"$<p>You can add cards to highlight sections of text and make pages more interactive. Buttons with collapsible sections can be embedded within cards - these are good for question hints or answers! An example of this can be seen below:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">card</span><span class="w"> </span><span class="p">%}</span>
+### This is a card
+
+What can I do with it?
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">button</span><span class="w"> </span>Answer<span class="w"> </span><span class="p">%}</span>
+
+Embed any markdown or code snippets like usual
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">endbutton</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">endcard</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<div class="card"><div class="card-body">
+<h3 id="this-is-a-card">This is a card</h3>
+
+<p>What can I do with it?</p>
+
+<p><a class="btn btn-primary" data-bs-toggle="collapse" href="#ETLUVHFN-collapse-1" role="button" aria-expanded="false" aria-controls="ETLUVHFN-collapse-1">
+        Answer </a></p>
+<div class="collapse" id="ETLUVHFN-collapse-1">
+    <div class="card card-body">
+        
+<p>Embed any markdown or code snippets like usual</p>
+
+
+    </div></div>
+
+</div></div>
+
+<p><br /></p>
+
+<div class="card"><div class="card-body">
+<p>You can put anything in a card, even sections of code!</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"Hello Cards!"</span><span class="p">)</span></code></pre></figure>
+
+<div class="card"><div class="card-body">
+<p>Or another card.</p>
+
+<div class="card"><div class="card-body">
+<p>Or another…</p>
+
+</div></div>
+
+</div></div>
+
+</div></div>
+
+<p><br /></p>
+:ET

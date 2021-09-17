@@ -1,0 +1,2 @@
+I"<p>To enable equations for a given page, you must set <code class="language-plaintext highlighter-rouge">use_math</code> to <code class="language-plaintext highlighter-rouge">true</code> in the page’s front matter. For example, this page’s front matter appears as follows:</p>
+:ET

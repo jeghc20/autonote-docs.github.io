@@ -1,0 +1,75 @@
+I"L<p>AutoNOTE 2 uses a Rouge highlighter to provide effective code formatting. There are two distinct versions of code highlighting:</p>
+<ol>
+  <li>Inline code or keywords.</li>
+  <li>Code snippets.</li>
+</ol>
+
+<p>The AutoNOTE highlighter has some additional features and options, detailed in the document below.</p>
+
+<h2 id="inline-keywords">Inline Keywords</h2>
+
+<p>You can <code class="language-plaintext highlighter-rouge">highlight</code> keywords in a body of text using the tick symbol, for example this sentence was generated using:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">You can `highlight` keywords in a body of text.</code></pre></figure>
+
+<h2 id="code-snippets">Code snippets</h2>
+
+<p>Code snippets are generated using the <code class="language-plaintext highlighter-rouge">highlight</code> command. For example:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">highlight</span><span class="w"> </span>python<span class="w"> </span><span class="p">%}</span>
+# Start with a comment.
+def HelloWorld():
+  message = 'Hello World'
+  print(message) # Prints the message 'Hello World' to the terminal
+  return 0
+<span class="p">{%</span><span class="w"> </span><span class="nt">endhighlight</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>As shown in this example, the programming language (python) is provided as an argument to ensure that the syntax highlighting is processed correctly.
+This yields the following result:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-python" data-lang="python"><span class="c1"># Start with a comment.
+</span><span class="k">def</span> <span class="nf">HelloWorld</span><span class="p">():</span>
+  <span class="n">message</span> <span class="o">=</span> <span class="s">'Hello World'</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> <span class="c1"># Prints the message 'Hello World' to the terminal
+</span>  <span class="k">return</span> <span class="mi">0</span></code></pre></figure>
+
+<h3 id="optional-arguments">Optional arguments</h3>
+
+<h4 id="linenos---line-numbering">linenos - Line numbering</h4>
+
+<h4 id="startline---numbering-start-count">startline - Numbering start count</h4>
+
+<h4 id="enddots">enddots</h4>
+
+<h4 id="noselect">noselect</h4>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">highlight</span><span class="w"> </span>python<span class="w"> </span>linenos<span class="w"> </span><span class="na">startline</span><span class="o">=</span><span class="mi">3</span><span class="w"> </span>enddots<span class="w"> </span>noselect<span class="w"> </span><span class="p">%}</span>
+# Start with a comment.
+def HelloWorld():
+  message = 'Hello World'
+  print(message) # Prints the message 'Hello World' to the terminal
+  return 0
+<span class="p">{%</span><span class="w"> </span><span class="nt">endhighlight</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre class="noselect"><div class="snippit">...</div><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="c1"># Start with a comment.
+</span><span class="k">def</span> <span class="nf">HelloWorld</span><span class="p">():</span>
+  <span class="n">message</span> <span class="o">=</span> <span class="s">'Hello World'</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> <span class="c1"># Prints the message 'Hello World' to the terminal
+</span>  <span class="k">return</span> <span class="mi">0</span>
+</pre></td></tr></tbody></table></code><div class="snippit">...</div></pre></figure>
+
+<h3 id="coming-soon">Coming soon</h3>
+
+<ul>
+  <li>Filename argument</li>
+</ul>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'hello World'</span><span class="p">)</span> <span class="c1"># Comment</span></code></pre></figure>
+
+<p>Todo: Explore custom include folder.</p>
+:ET

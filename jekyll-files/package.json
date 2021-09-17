@@ -1,0 +1,12 @@
+{
+  "name": "autonote",
+  "version": "2.0.0",
+  "description": "A Jekyll tool for generating tidy lecture and lab notes that play nicely with Moodle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan G-H-Cater",
+  "license": "ISC",
+  "dependencies": {}
+}

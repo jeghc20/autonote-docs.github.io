@@ -1,0 +1,16 @@
+title: AutoNOTE
+url: http://127.0.0.1:4000
+baseurl: "" # the sub-path of your site, e.g. /blog
+landing: /index.html
+hostinfo: University of Bath
+
+exclude:
+  - package.json
+  - ISC.md
+  - Readme.md
+  - package-lock.json
+
+collections:
+  features:
+    output: true
+    #permalink: /:title

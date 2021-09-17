@@ -1,0 +1,132 @@
+.nav_main_menu{
+    // margin-bottom: 2em;
+}
+
+.navbar{
+    &.bg-white{
+        border-bottom: 1px solid #dee2e6;
+    }
+    .uob_logo{
+        width: 100px;
+    }
+}
+
+.breadcrumb-wrapper{
+    background-color: white;
+    .container{
+        padding-top: 0.75em;
+        padding-bottom: 0.5em;
+    }
+}
+.breadcrumb-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.navbar{
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+.breadcrumb{
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+    .breadcrumb-item{
+        display: flex;
+        align-items: center;
+        // font-size: .875rem;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.nav-tabs{
+    border-radius: 0.5rem;
+    background: #e9ecef;
+    .nav-item{
+        margin: .5rem;
+        .nav-link{
+            font-size: .875rem;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            padding: .5rem;
+            transition: color .5s ease-in-out;
+            color: default;
+            
+            &.active{
+                color: #007bff;
+                background-color: #fff;
+                border-color: transparent;
+            }
+            &:hover{
+                border-color: #007bff00;
+            }
+
+            &.level1{
+                
+            }
+            &.level2{
+                margin-left: 2em;
+            }
+            &.level3{
+                margin-left: 4em;
+            }
+        }
+    }
+}
+
+.nav-list{
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+ul{
+    &.no-decoration{
+        list-style: none;
+        padding-left: 0.5em;
+    }
+}
+.nav-title{
+    min-width: 11rem;
+    font-size: .9rem;
+    height: 2.5rem;
+    line-height: 1.2rem;
+    padding: .6rem 1.7rem;
+    white-space: nowrap;
+    border-width: .05rem;
+    border-style: solid;
+    border-radius: 1.25rem;
+    text-decoration: none !important;
+    color: black;
+    background-color: $nav_button_colour;
+    border-color: $nav_button_colour;
+    &:not(.no-link){
+        &:hover{
+            color: inherit;
+            background-color: $nav_button_highlight;
+            border-color: $nav_button_highlight;
+        }
+    }
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    &.non-link{
+        color: inherit;
+    }
+}
+
+.front-page-nav-container{
+    margin-top: 1em;
+    .nav-list{
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+}

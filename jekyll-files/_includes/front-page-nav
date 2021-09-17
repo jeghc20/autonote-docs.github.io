@@ -1,0 +1,30 @@
+<div class="row justify-content-center front-page-nav-container">
+  {% if page.use_custom_menu == true%}
+  {%- comment -%} If custom yaml file used {%- endcomment -%}
+    {% for item in site.data.front-page-nav.custom-menu %}
+      {% if item.collection %}
+        {% for collection in site.collections %}
+          {% if item.collection == collection.label %}
+            {% assign items = site[collection.label] %}
+            {% include front-page-nav-item title=item.title items=items%}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {% include front-page-nav-item title=item.title markdown-file=item.markdown-file pages=item.pages%}
+      {% endif %}
+    {% endfor %}
+  {% elsif page.navigation.size > 0%}
+    {%- comment -%} If they have put collections in page front-matter {%- endcomment -%}
+    {% for collection in site.collections %}
+      {% if page.navigation contains collection.label %}
+        {% assign items = site[collection.label] %}
+        {% include front-page-nav-item title=collection.label items=items%}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+  {%- comment -%} Else, use header nav info {%- endcomment -%}
+    {% for item in site.data.nav_menu.menu_links %}
+      {% include front-page-nav-item title=item.title markdown-file=item.markdown-file pages=item.dropdown%}
+    {% endfor %}
+  {% endif %}
+</div>

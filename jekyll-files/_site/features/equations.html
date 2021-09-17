@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Equations - AutoNOTE</title>
+  <link rel="stylesheet" href='../main.css'>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+      displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+      processEscapes: true,
+    }
+  });
+
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../assets/js/app.js"></script>
+  <!-- AnchorJS -->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<body>
+  <!-- Include site header for all pages -->
+  <div class="header-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="..">
+        AutoNOTE Docs
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+            
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="../getting_started.html">Getting Started</a>
+                </li>
+            
+        
+            
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="../deploy.html">Deploy to Moodle</a>
+                </li>
+            
+        
+            
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="../features.html">All Features</a>
+                </li>
+            
+        
+      </ul>
+
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="..">
+        <img src="../assets/imgs/uob-logo-white-transparent.svg" alt="" class="uob_logo"/>
+    </a>
+  </div>
+</nav>
+    
+<!-- <div class="navbar bg-white breadcrumb-bar"> -->
+<section class="breadcrumb-wrapper">
+    <div class="container bg-white">
+        <div class="row justify-content-around">
+            <div class="col-xl-3 col-lg-3 mb-4 mt-2 d-none d-lg-block">
+
+            </div>
+            <div class="col-md-9 col-lg-8">
+                
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+    
+      
+        <li class="breadcrumb-item">
+        <a href="../features.html">
+          Features
+        </a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Equations</li>
+      
+    
+  </ol>
+</nav>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- </div> -->
+
+  </div>
+
+  
+  <div class="container content-container">
+    <div class="row justify-content-around">
+      <div class="col-xl-3 col-lg-3 mb-4 mt-2 d-none d-lg-block">
+        <div class="sticky-top">
+          <div class="pt-lg-3"></div>
+          <ul class="nav nav-tabs flex-lg-column">
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-9 col-lg-8">
+        <h1 class="page-title" id="Equations">Equations</h1>
+
+<hr class="my-lg-4 my-3">
+<p>To enable equations for a given page, you must set <code class="language-plaintext highlighter-rouge">use_math</code> to <code class="language-plaintext highlighter-rouge">true</code> in the page’s front matter. For example, this page’s front matter appears as follows:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: Equations Demo
+use_math: true
+---</code></pre></figure>
+
+<p>Equation support is built directly into AutoNOTE 2. With these tools, it is simple to add both inline or block-centered equations using the familiar LaTeX maths commands. In both cases, the equations are denoted using the <code class="language-plaintext highlighter-rouge">$$</code> command in the markdown files.</p>
+
+<h2 id="inline-equations">Inline Equations</h2>
+<p>To implement an inline equation you can simply include the equation inline with some text, as follows:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">Some inline LaTeX: $$a^2 + b^2 = c^2$$</code></pre></figure>
+
+<p>Any equation will render as an inline equation unless there is a blank line above the equation block. The above code yields the following result:</p>
+
+<p>Some inline LaTeX: \(a^2 + b^2 = c^2\)</p>
+
+<h2 id="display-equation">Display Equation</h2>
+<p>There are two different ways to implement a standard centered equation. While the first is easy to recall and implement, the second allows far greater control over the final result.</p>
+
+<h3 id="method-1---white-space">Method 1 - White Space</h3>
+<p>First, you can simply use the inline notation on a new line, as follows (note the black line above the equation is required):</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">The following equation is displayed as a centered block. 
+This is thanks to the empty line between this sentence and the equations definition.
+
+$$\int e^{-kx} \, dx = -\frac{1}{k} e^{-kx}$$</code></pre></figure>
+
+<p>If used in a page, this command would yield the following results:</p>
+
+<p>The following equation is displayed as a centered block. 
+This is thanks to the empty line between this sentence and the equations definition.</p>
+
+\[\int e^{-kx} \, dx = -\frac{1}{k} e^{-kx}\]
+
+<p>This method does not support equation numbering or cross referencing.</p>
+
+<h3 id="method-2---full-equation-block">Method 2 - Full Equation Block</h3>
+
+<p>The second method is really just an expansion of the first. As before we use the <code class="language-plaintext highlighter-rouge">$$</code> special characters to activate the equation parser (note that without these markers the system will often still appear to work - however, here be dragons). We may use any of the standard LaTeX equation commands and syntax, for example:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">$$
+\begin{equation}
+\begin{split}
+   (x+1)^2 &amp;= (x+1)(x+1)\\
+           &amp;= x^2 + 2x + 1
+\end{split}
+\end{equation}
+\label{eq:exampleEquation}
+$$</code></pre></figure>
+
+<p>The above example makes use of the <code class="language-plaintext highlighter-rouge">equation</code>, <code class="language-plaintext highlighter-rouge">label</code> and <code class="language-plaintext highlighter-rouge">split</code> blocks from LaTeX. The <code class="language-plaintext highlighter-rouge">equation</code> block will cause the equation to be numbered, allowing the document to reference the equation via it’s <code class="language-plaintext highlighter-rouge">label</code> using the command <code class="language-plaintext highlighter-rouge">\eqref{eq:exampleEquation}</code>. The <code class="language-plaintext highlighter-rouge">split</code> command acts to divide the equation between two lines, aligning the <code class="language-plaintext highlighter-rouge">=</code> signs accordingly. This code yields the result shown below in Equation \eqref{eq:exampleEquation}.</p>
+
+\[\begin{equation}
+\begin{split}
+   (x+1)^2 &amp;= (x+1)(x+1)\\
+           &amp;= x^2 + 2x + 1
+\end{split}
+\end{equation}
+\label{eq:exampleEquation}\]
+
+<p>It is important to note that the <code class="language-plaintext highlighter-rouge">label</code> command is not in the usual place in the above example but rather comes after the <code class="language-plaintext highlighter-rouge">equation</code> block. This, sadly, is a key difference between the AutoNOTE 2 and LaTeX syntax. Labels must come after the block that they are to point to (unlike LaTeX). In this case following either the <code class="language-plaintext highlighter-rouge">split</code> or <code class="language-plaintext highlighter-rouge">equation</code> block would do.</p>
+
+<h2 id="the-align-block">The Align Block</h2>
+
+<p>As in LaTeX, the Align block may be used to number each line separately or to specify which equations in a group are numbered. The <code class="language-plaintext highlighter-rouge">\nonumber</code> or <code class="language-plaintext highlighter-rouge">\notag</code> commands are used to skip numbering specific lines. For example:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid">$$
+\begin{align}
+   (x+1)^2 &amp;= (x+1)(x+1) \nonumber \\ \label{eq:squareA}
+           &amp;= x^2 + 2x + 1 \\
+           &amp;= \frac{1}{2}(x+1)(2x+2) \notag \\ \label{eq:squareB}
+           &amp;= \frac{1}{(x+1)^{-2}}
+\end{align}
+$$</code></pre></figure>
+
+<p>Once again, the <code class="language-plaintext highlighter-rouge">label</code> tag comes after the equation that it points to. This makes it possible to reference specific lines in an equation group, as shown in Equations \eqref{eq:squareA} and \eqref{eq:squareB}.</p>
+
+\[\begin{align}
+   (x+1)^2 &amp;= (x+1)(x+1) \nonumber \\ \label{eq:squareA}
+           &amp;= x^2 + 2x + 1 \\
+           &amp;= \frac{1}{2}(x+1)(2x+2) \notag \\ \label{eq:squareB}
+           &amp;= \frac{1}{(x+1)^{-2}}
+\end{align}\]
+
+<h1 id="some-further-examples">Some further examples</h1>
+
+<p>You can view the original source markdown for this document in ‘_features/equations.md’. It is easy to reference variables in markdown, such as $x$, $y$, $x_1$ and $y_1$.
+You can even use special characters like $|\psi\rangle$, $x’$, $x^*$, however some need escaping with <code class="language-plaintext highlighter-rouge">\</code>.</p>
+
+<p>Just like in LaTeX, you can use <code class="language-plaintext highlighter-rouge">equation*</code> or <code class="language-plaintext highlighter-rouge">align*</code> blocks to stop the system from numbering the equations.</p>
+
+\[\begin{align*}
+    |\psi_1\rangle &amp;= a|0\rangle + b|1\rangle \\
+    |\psi_2\rangle &amp;= c|0\rangle + d|1\rangle
+  \end{align*}\]
+
+<p>Finally, more complex equations are supported, as shown in equitation \eqref{eq:twodmat}.</p>
+
+\[\begin{equation}
+A_{m,n} = 
+\begin{pmatrix}
+a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\
+a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\
+\vdots  &amp; \vdots  &amp; \ddots &amp; \vdots  \\
+a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n} 
+\end{pmatrix}
+\label{eq:twodmat}
+\end{equation}\]
+
+<p>Here is another example, testing the various different styles of matrices supported by the system.</p>
+
+\[\begin{matrix} 
+a &amp; b \\
+c &amp; d 
+\end{matrix}
+\quad
+\begin{pmatrix} 
+a &amp; b \\
+c &amp; d 
+\end{pmatrix}
+\quad
+\begin{bmatrix} 
+a &amp; b \\
+c &amp; d 
+\end{bmatrix}
+\quad
+\begin{vmatrix} 
+a &amp; b \\
+c &amp; d 
+\end{vmatrix}
+\quad
+\begin{equation}
+\begin{Vmatrix} 
+a &amp; b \\
+c &amp; d 
+\end{Vmatrix}
+\end{equation}\]
+
+
+        <div class="citation_footer_wrapper">
+    <h3>Citations</h3>
+    <ol class="citation_footer">
+
+    </ol>
+</div>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- Include site footer for all pages -->
+  <footer class="footer mt-auto text-muted">
+  <hr />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p class="footer-copyright">AutoNote is funded by the University of Bath <br> AutoNote was developed by Jonathan Cater and Fraser March</p>
+      </div>
+
+      <div class="col-sm text-sm-end">
+        <p class="footer-copyright ml-auto">University of Bath</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- AnchorJS -->
+  <script>
+    anchors.options.placement = 'left';
+    anchors.add('h1');
+    anchors.add();
+  </script>
+</body>
+
+</html>

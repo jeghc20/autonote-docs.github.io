@@ -1,0 +1,16 @@
+<div class="col-auto">
+
+    <a class="h5 nav-title {% if include.markdown-file == null %}non-link{% endif %}" {% if include.markdown-file %} href="{{ relative_url_base }}{% link {{include.markdown-file}} %}"{% endif %}>{{ include.title |
+        capitalize }}</a>
+    <ul class="nav-list">
+        {% if include.pages%}
+            {% for item in include.pages %}
+                <li class="nav-item"><a href="{{ relative_url_base }}{% link {{item.markdown-file}} %}">{{ item.title }}</a></li>
+            {% endfor %}
+        {%else%}
+            {% for item in include.items %}
+                <li class="nav-item"><a href="{{ relative_url_base }}{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</div>

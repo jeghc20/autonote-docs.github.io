@@ -1,0 +1,6 @@
+<h1 class="page-title" id="{{page.title}}">{{page.title}}</h1>
+{% if page.sub-title %}
+<p>{{page.sub-title}}</p>
+{% endif %}
+<hr class="my-lg-4 my-3">
+{{ content }}

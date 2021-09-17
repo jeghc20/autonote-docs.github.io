@@ -1,0 +1,112 @@
+I"�%<p>To include images in your pages, first you must add them to the images folder.</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-plain" data-lang="plain">AutoNOTE/
+├─ images/
+   ├─ ...</code></pre></figure>
+
+<p>After that, they can be added to your page with the below command. You can also add an image caption and alternative image text. If you do not give alternative text, this defaults to the image caption.</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"This is a custom caption for the image."</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Image alternative text"</span><span class="p">%}</span></code></pre></figure>
+
+<h2 id="sizes">Sizes</h2>
+<p>To customise the image size, set the <code class="language-plaintext highlighter-rouge">size</code> parameter to <code class="language-plaintext highlighter-rouge">sm</code>, <code class="language-plaintext highlighter-rouge">md</code> or <code class="language-plaintext highlighter-rouge">lg</code> - the default is medium. If these sizes aren’t right for you, set the <code class="language-plaintext highlighter-rouge">size-custom</code> parameter from <code class="language-plaintext highlighter-rouge">1-12</code>, 1 being the smallest and 12 being full width. Here are some examples:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">size</span><span class="o">=</span><span class="s2">"sm"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Small (sm) image."</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-3">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Small (sm) image.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">size</span><span class="o">=</span><span class="s2">"md"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Medium (md) image."</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Medium (md) image.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://via.placeholder.com/600x450"</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">size</span><span class="o">=</span><span class="s2">"lg"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Large (lg) image."</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Large (lg) image.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">size-custom</span><span class="o">=</span><span class="mi">2</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Custom size 2."</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-2">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Custom size 2.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">size-custom</span><span class="o">=</span><span class="mi">5</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Custom size 5."</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Custom size 5.</figcaption>
+</figure>
+    </div>
+</div>
+<h2 id="positions">Positions</h2>
+
+<p>To change the position of the image, simply set the <code class="language-plaintext highlighter-rouge">position</code> parameter to <code class="language-plaintext highlighter-rouge">left</code> or <code class="language-plaintext highlighter-rouge">right</code> - middle is the default.  Here are some examples:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">position</span><span class="o">=</span><span class="s2">"left"</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-left">
+    <div class="col-md-5">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Cute dog on the left.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Cute dog on the right.</figcaption>
+</figure>
+    </div>
+</div>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">image</span><span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"cute_dog.png"</span><span class="w"> </span><span class="na">position</span><span class="o">=</span><span class="s2">"right"</span><span class="p">%}</span></code></pre></figure>
+
+<div class="row justify-content-end">
+    <div class="col-md-5">
+
+<figure class="figure">
+    <img src="https://via.placeholder.com/600x450" class="figure-img img-fluid rounded" alt="Image alternative text" />
+    <figcaption class="figure-caption">Cute dog on the right.</figcaption>
+</figure>
+    </div>
+</div>
+:ET

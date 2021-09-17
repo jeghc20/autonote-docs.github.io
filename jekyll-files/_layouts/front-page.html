@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+
+<head>
+  {% include relative_url_base %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Home - {{ site.title }}</title>
+  <link rel="stylesheet" href='{{ relative_url_base }}/main.css'>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="{{ relative_url_base }}/assets/js/app.js"></script>
+  <!-- AnchorJS -->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<body class="front-page">
+  <!-- Include site header for all pages -->
+  <div class="header-wrapper">
+    {% include header %}
+    {% include breadcrumb_bar %}
+  </div>
+
+  {% if page.url != '/' %}
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-xl-3 col-lg-3 mb-4 mt-2 d-none d-lg-block">
+        <div class="sticky-top">
+          <div class="pt-lg-3"></div>
+          <ul class="nav nav-tabs flex-lg-column">
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-9 col-lg-8">
+        {% include page_content %}
+        {% include citation_footer %}
+      </div>
+    </div>
+
+  </div>
+  {% else %}
+  {% include front-page-hero %}
+
+  <div class="container">
+    {% include front-page-nav %}
+    {{ content }}
+    {% include citation_footer %}
+  </div>
+
+  {% endif%}
+  <!-- Include site footer for all pages -->
+  {% include footer %}
+  <!-- AnchorJS -->
+  <script>
+    anchors.options.placement = 'left';
+    anchors.add('h1');
+    anchors.add();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+// Make sure that the page is always full screen height
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #6c757d;
+
+  text-align: left;
+  background-color: #f8f9fa !important;
+}
+
+.header-wrapper{
+  margin-bottom: 2rem;
+}
+
+.btn{
+  border-radius: 1.25rem !important;
+}

@@ -1,0 +1,15 @@
+I"(<p>To include a citation in your page you can use the command below:</p>
+
+<figure class="highlight"><figcaption class="code">Code snippet</figcaption><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">citation</span><span class="w"> </span><span class="na">text</span><span class="o">=</span><span class="s2">"Your citation goes here."</span><span class="p">%}</span></code></pre></figure>
+
+<p>These are what the citations look like <span class="ref">
+    <span class="refnum"></span>
+    <span class="refbody">They’re inspired by what-if.xkcd.com</span>
+</span>. When you click on them a pop-up with the text appears <span class="ref">
+    <span class="refnum"></span>
+    <span class="refbody">Just like this!</span>
+</span>. A list of citations is then made at the bottom of each page <span class="ref">
+    <span class="refnum"></span>
+    <span class="refbody">This is to make AutoNOTE as accessible as possible.</span>
+</span>.</p>
+:ET
